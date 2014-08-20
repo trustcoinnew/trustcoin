@@ -1,0 +1,2 @@
+debian/bin/trustcoind usr/bin
+src/trustcoind usr/lib/trustcoin
