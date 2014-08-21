@@ -959,6 +959,7 @@ int64 GetProofOfWorkReward(int nHeight, int64 nFees, uint256 prevHash)
 
 	// Subsidy is cut in half every week or 20160 blocks, which will occur approximately every month
 	nSubsidy >>= (nHeight / 20160); 
+	if( nHeight > 39800 ) nSubsidy = 50 * COIN;
     return nSubsidy + nFees;
 }
 
