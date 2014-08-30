@@ -42,7 +42,7 @@ void StatisticsPage::updateStatistics()
     int pPawrate = GetPoWMHashPS();
     double pPawrate2 = 0.000;
     int nHeight = pindexBest->nHeight;
-    double nSubsidy = 150000;
+    double nSubsidy = 0;
     uint64_t nMinWeight = 0, nMaxWeight = 10, nWeight = 10;
     pwalletMain->GetStakeWeight(*pwalletMain, nMinWeight, nMaxWeight, nWeight);
     uint64_t nNetworkWeight = GetPoSKernelPS();
@@ -53,11 +53,11 @@ void StatisticsPage::updateStatistics()
     QString stakemin = QString::number(nMinWeight);
     QString stakemax = QString::number(nNetworkWeight);
     QString phase = "";
-    if (pindexBest->nHeight < 200000)
+    if (pindexBest->nHeight < 51000)
     {
         phase = "Scrypt POW";
     }
-    else if (pindexBest->nHeight > 200000)
+    else if (pindexBest->nHeight > 51000)
     {
         phase = "POS - 7% Interest";
     }
