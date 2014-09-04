@@ -42,7 +42,7 @@ static CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 20);
 static CBigNum bnProofOfStakeLimitTestNet(~uint256(0) >> 20);
 
 unsigned int nStakeMinAge = 60 * 60 * 24 * 20;	// minimum age for coin age: 20d
-unsigned int nStakeMaxAge = 60 * 60 * 24 * 40;	// stake age of full weight: 40d
+unsigned int nStakeMaxAge = 60 * 60 * 24 * 100;	// stake age of full weight: 100d
 unsigned int nStakeTargetSpacing = 40;			// 40 sec block spacing
 
 int64 nChainStartTime = 1406353616;
