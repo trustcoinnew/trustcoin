@@ -972,11 +972,11 @@ int64 GetProofOfStakeReward(int64 nCoinAge, unsigned int nBits, unsigned int nTi
 	nRewardCoinYear = MAX_TRUST_PROOF_OF_STAKE;
 
 	if(nHeight < YEARLY_BLOCKCOUNT)
-		nRewardCoinYear = 4 * MAX_TRUST_PROOF_OF_STAKE;
+		nRewardCoinYear = 1 * MAX_TRUST_PROOF_OF_STAKE;
 	else if(nHeight < (2 * YEARLY_BLOCKCOUNT))
-		nRewardCoinYear = 3 * MAX_TRUST_PROOF_OF_STAKE;
+		nRewardCoinYear = 1 * MAX_TRUST_PROOF_OF_STAKE;
 	else if(nHeight < (3 * YEARLY_BLOCKCOUNT))
-		nRewardCoinYear = 2 * MAX_TRUST_PROOF_OF_STAKE;
+		nRewardCoinYear = 1 * MAX_TRUST_PROOF_OF_STAKE;
 
     int64 nSubsidy = nCoinAge * nRewardCoinYear / 365;
 
