@@ -26,7 +26,7 @@ namespace Checkpoints
         boost::assign::map_list_of
         (     0, hashGenesisBlockOfficial )
         ( 51000,  uint256("00000005caf67456e7ff67d35f3d8adb7c842cafeca5c2db105e1b3278b45d50") ) // last pow block
-        ( 59672,  uint256("fb847b95b349310a558a7011a2ba539cc89019fdd63e1db6563bca449093aee5") ) // correct pos block
+
 
 		;
 
